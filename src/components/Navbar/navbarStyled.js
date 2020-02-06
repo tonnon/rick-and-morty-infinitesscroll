@@ -1,4 +1,7 @@
-.navbar {
+import styled from 'styled-components';
+
+
+export const NavBar = styled.div`
     width: 100%;
     background: #111111;
     height: auto;
@@ -7,7 +10,7 @@
     align-items: center;
     padding: 10px 0 10px 0;
     justify-content: center;
-}
-.navbar img {
-    width: 250px;
-}
+        img {
+            width: 250px;
+        }
+`;

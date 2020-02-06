@@ -1,16 +1,10 @@
 import React from 'react';
 import './App.css';
+import Table from './components/Table/Table.js';
 
-import { BrowserRouter } from 'react-router-dom';
-
-import Routes from './routes';
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Table/>
+    )
+  };
+export default App;
