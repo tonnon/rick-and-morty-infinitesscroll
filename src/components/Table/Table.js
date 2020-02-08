@@ -5,18 +5,22 @@ import api from '../../services/api.js';
 
 const Table = () => {
   const [characters, setCharacters] = useState([]);
+  const [numPages] = useState([26]);
 
   useEffect(() => {
     async function loadData() {
-      const apiResponse = await api.get(`?page=1`);
-      setCharacters(apiResponse.data.results);
+      for(var i = 0; i < numPages; i++){
+        const apiResponse = await api.get(`?page=` + i);
+        setCharacters(apiResponse.data.results);
+      } 
     }
     loadData();
-  }, []); // Não há dependências, irá executar uma vez igual ao componentDidMount()
+  }, [numPages]); 
+
+  // Não há dependências, irá executar uma vez igual ao componentDidMount()
   
   // Recebe dois parêmetros. Uma função e um array de dependências.
   // Substitui os ciclos de vida do React, porém, são conceitos diferentes
-
 
   return (
     <div className="container">
@@ -32,6 +36,9 @@ const Table = () => {
                   </h3>
                   <h4>
                     <span>{character.species} - {character.status}</span>
+                  </h4>
+                  <h4>
+                    <span>{character.origin.name}</span>
                   </h4>
                 </header>
               </section>
