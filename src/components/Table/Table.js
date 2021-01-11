@@ -62,8 +62,6 @@ const Table = () => {
           }
         })}
       </CardGrid>
-        <div>{loading && <Spinner/>}</div>
-        <div>{error && 'Error...'}</div>
     </div>
   );
 };
