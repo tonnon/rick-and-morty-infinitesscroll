@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rick-and-morty-infinitesscroll/static/css/main.36b6cbe4.css",
+    "main.js": "/rick-and-morty-infinitesscroll/static/js/main.c5f2728d.js",
+    "static/media/logo.png": "/rick-and-morty-infinitesscroll/static/media/logo.df73b7db546a5a50f92d.png",
+    "index.html": "/rick-and-morty-infinitesscroll/index.html",
+    "main.36b6cbe4.css.map": "/rick-and-morty-infinitesscroll/static/css/main.36b6cbe4.css.map",
+    "main.c5f2728d.js.map": "/rick-and-morty-infinitesscroll/static/js/main.c5f2728d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36b6cbe4.css",
+    "static/js/main.c5f2728d.js"
+  ]
+}
